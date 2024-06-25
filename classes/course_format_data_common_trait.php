@@ -52,7 +52,7 @@ class course_format_data_common_trait {
      * Constructor
      */
     private function __construct() {
-        $this->plugin_config = "format_remuiformat";
+        $this->_plugin_config = "format_remuiformat";
         $this->modstats = \format_remuiformat\ModStats::getinstance();
     }
     /**
