@@ -23,8 +23,6 @@
 
 namespace format_remuiformat;
 
-defined('MOODLE_INTERNAL') || die;
-
 use html_writer;
 
 /**
@@ -38,17 +36,17 @@ class ModStats {
      */
     protected static $instance;
 
-    /**
+ /**
      * Plugin config
      * @var string
      */
-    private $_plugin_config;
+    private $_plugin_config = "format_remuiformat"; // Declarando e inicializando explicitamente
 
     /**
      * Private constructor
      */
     private function __construct() {
-        $this->plugin_config = "format_remuiformat";
+        // Construtor privado
     }
 
     /**
